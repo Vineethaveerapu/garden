@@ -2,6 +2,8 @@ import styles from "./Header.module.css";
 import { List, X } from "@phosphor-icons/react";
 import Navigation from "../Navigation";
 import { useState } from "react";
+import logo from "../../assets/tulips.png";
+import { slide as Menu } from "react-burger-menu";
 
 const Header = ({ handleClick }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +21,8 @@ const Header = ({ handleClick }) => {
   return (
     <>
       <div className={styles.header}>
-        <span>Logo</span>
+        <img src={logo} alt="logo" className={styles.logo} />
+
         <Navigation handleClick={handleClick} />
         <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
           {isOpen ? <X size={32} /> : <List size={32} />}

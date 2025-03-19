@@ -1,19 +1,24 @@
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color: #ed8787;
   padding: 10px;
   font-size: 1.8rem;
   cursor: pointer;
 
   nav {
     display: flex;
-    gap: 10px;
+    gap: 5vw;
   }
 }
 
 .mobileMenuButton {
   display: none;
+}
+
+.logo {
+  width: auto;
+  height: 5rem;
 }
 
 @media (max-width: 768px) {
