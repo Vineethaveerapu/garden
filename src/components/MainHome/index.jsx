@@ -1,4 +1,5 @@
 import styles from "./MainHome.module.css";
+import gardenersTaskList from "../../data";
 
 const MainHome = () => {
   return (
@@ -15,10 +16,20 @@ const MainHome = () => {
       </div>
       <section className={styles.mainHomeSection}>
         <h2>What We Offer</h2>
-        <p>
-          We offer a wide range of services to help you create and maintain your
-          garden.
-        </p>
+
+        <div className={styles.taskContainer}>
+          {gardenersTaskList.map((task) => (
+            <div key={task.title} className={styles.taskItem}>
+              <figure className={styles.taskImage}>
+                <img src={task.image} alt={task.title} width={70} />
+              </figure>
+              <div className={styles.taskContent}>
+                <h3>{task.title}</h3>
+                <p>{task.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );
