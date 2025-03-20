@@ -21,7 +21,7 @@
 .mainHomeContent h1 {
   font-size: 4rem;
   font-weight: 400;
-  color: #08b22a;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -37,7 +37,7 @@
   padding: 1rem;
   text-align: center;
   font-size: 2rem;
-  color: #08b22a;
+  color: var(--primary-color);
 }
 
 .taskImage {
@@ -48,7 +48,7 @@
   height: 100px;
   aspect-ratio: 1 / 1;
   border-radius: 100px;
-  border: 1px solid #08b22a;
+  border: 1px solid var(--primary-color);
 
   img {
     object-fit: contain;
