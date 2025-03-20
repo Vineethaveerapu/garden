@@ -28,9 +28,6 @@ const Header = ({ handleClick }) => {
         <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
           {isOpen ? <X size={32} /> : <List size={32} />}
         </button>
-        {/* {isOpen && (
-          <Navigation handleClick={handleClick} className={styles.mobileMenu} />
-        )} */}
       </div>
     </>
   );

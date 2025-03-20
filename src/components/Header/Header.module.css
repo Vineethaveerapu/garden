@@ -2,15 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 8px;
   font-size: 1.8rem;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
 }
 
 .desktopNav {
   display: flex;
-  gap: 5vw;
+  gap: 4rem;
+  margin-right: 2rem;
 }
 
 .mobileMenuButton {
