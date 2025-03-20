@@ -17,6 +17,10 @@
   display: none;
 }
 
+.desktopNav div:hover {
+  color: rgb(225, 9, 9);
+}
+
 .logo {
   width: auto;
   height: 5rem;
@@ -34,6 +38,10 @@
   align-items: center;
   background-color: rgb(242, 232, 232);
   animation: slideDown 0.7s ease-in-out;
+}
+
+.mobileMenu div:hover {
+  color: rgb(225, 9, 9);
 }
 
 @keyframes slideDown {
