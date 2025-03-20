@@ -1,10 +1,14 @@
-const Navigation = ({ handleClick, className }) => {
+const Navigation = ({ setCurrentPage, className }) => {
+  const handleClick = (page) => {
+    setCurrentPage(page);
+  };
+
   return (
     <nav className={className}>
-      <div onClick={handleClick}>Home</div>
-      <div onClick={handleClick}>Garden</div>
-      <div onClick={handleClick}>Services</div>
-      <div onClick={handleClick}>Contact</div>
+      <div onClick={() => handleClick("home")}>Home</div>
+      <div onClick={() => handleClick("garden")}>Garden</div>
+      <div onClick={() => handleClick("services")}>Services</div>
+      <div onClick={() => handleClick("contact")}>Contact</div>
     </nav>
   );
 };
