@@ -9,6 +9,7 @@ const Header = ({ setCurrentPage }) => {
 
   const menuButtonClick = () => {
     setIsOpen(isOpen ? false : true);
+
     // setIsOpen(!isOpen);
     // if (isOpen) {
     //   setIsOpen(false);
@@ -17,12 +18,17 @@ const Header = ({ setCurrentPage }) => {
     // }
   };
 
+  const handleNavClick = (page) => {
+    setCurrentPage(page);
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div className={styles.header}>
         <img src={logo} alt="logo" className={styles.logo} />
         <Navigation
-          setCurrentPage={setCurrentPage}
+          handleNavClick={handleNavClick}
           className={isOpen ? styles.mobileMenu : styles.desktopNav}
         />
         <button onClick={menuButtonClick} className={styles.mobileMenuButton}>

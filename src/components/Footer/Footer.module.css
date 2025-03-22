@@ -3,6 +3,10 @@
   color: #0b0a0a;
   padding: 3rem 0 1rem 0;
   margin-top: 4rem;
+
+  ul {
+    list-style: none;
+  }
 }
 
 .footerContent {

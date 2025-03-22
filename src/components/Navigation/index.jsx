@@ -1,6 +1,6 @@
-const Navigation = ({ setCurrentPage, className }) => {
+const Navigation = ({ className, handleNavClick }) => {
   const handleClick = (page) => {
-    setCurrentPage(page);
+    handleNavClick(page);
   };
 
   return (

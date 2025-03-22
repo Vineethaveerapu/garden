@@ -71,3 +71,10 @@
 
   gap: 2rem;
 }
+
+@media (max-width: 768px) {
+  .taskItem {
+    flex-direction: column;
+    height: 100%;
+  }
+}
