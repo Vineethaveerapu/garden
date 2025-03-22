@@ -15,11 +15,6 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3>Quick Links</h3>
-          <Navigation />
-        </div>
-
-        <div>
           <h3>Contact Info</h3>
           <ul>
             <li>Email: info@garden.com</li>

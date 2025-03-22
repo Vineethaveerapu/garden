@@ -77,4 +77,8 @@
     flex-direction: column;
     height: 100%;
   }
+
+  .mainHomeContent {
+    margin-top: 0;
+  }
 }
