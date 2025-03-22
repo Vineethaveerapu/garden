@@ -4,7 +4,7 @@ import Navigation from "../Navigation";
 import { useState } from "react";
 import logo from "../../assets/tulips.png";
 
-const Header = ({ setCurrentPage }) => {
+const Header = ({ setCurrentPage, currentPage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuButtonClick = () => {
@@ -30,6 +30,7 @@ const Header = ({ setCurrentPage }) => {
         <Navigation
           handleNavClick={handleNavClick}
           className={isOpen ? styles.mobileMenu : styles.desktopNav}
+          currentPage={currentPage}
         />
         <button onClick={menuButtonClick} className={styles.mobileMenuButton}>
           {isOpen ? <X size={32} /> : <List size={32} />}

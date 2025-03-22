@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header setCurrentPage={setCurrentPage} />
+      <Header setCurrentPage={setCurrentPage} currentPage={currentPage} />
       <main>
         {currentPage === "home" && <MainHome />}
         {currentPage === "garden" && <Garden />}
