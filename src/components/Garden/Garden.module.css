@@ -1,0 +1,14 @@
+.gardenContainer {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  text-align: center;
+  margin-top: 3rem;
+  background-image: url("../../assets/garden-img1.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  width: 100vw;
+  margin-left: calc(var(--page-padding) * -1);
+  margin-right: calc(var(--page-padding) * -1);
+}
