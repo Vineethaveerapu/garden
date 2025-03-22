@@ -1,0 +1,20 @@
+.MediaText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
+}
+
+.MediaTextImage,
+.MediaTextContent {
+  flex: 0 0 50%;
+}
+
+.MediaTextImage {
+  max-width: 50%;
+  object-fit: cover;
+  height: 600px;
+}

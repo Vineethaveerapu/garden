@@ -1,6 +1,6 @@
 .gardenContainer {
   font-size: 2rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+
   text-align: center;
   margin-top: 3rem;
   background-image: url("../../assets/garden-img1.jpg");
@@ -11,4 +11,10 @@
   width: 100vw;
   margin-left: calc(var(--page-padding) * -1);
   margin-right: calc(var(--page-padding) * -1);
+}
+
+.gardenContent {
+  font-size: 1.5rem;
+
+  text-align: center;
 }
