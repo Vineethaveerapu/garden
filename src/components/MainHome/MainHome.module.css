@@ -77,6 +77,10 @@
 }
 
 @media (max-width: 768px) {
+  .mainHome {
+    min-height: 50vh;
+  }
+
   .taskItem {
     flex-direction: column;
   }

@@ -2,19 +2,46 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-height: 50vh;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
-  @media (max-width: 760px) {
-    flex-direction: column;
+  h3 {
+    margin: 0;
   }
 }
 
 .MediaTextImage,
 .MediaTextContent {
-  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .MediaTextImage {
-  max-width: 50%;
   object-fit: cover;
-  height: 600px;
+}
+
+.MediaTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .MediaText {
+    flex-direction: column;
+    max-height: unset;
+  }
+
+  .MediaTextImage,
+  .MediaTextContent {
+    max-width: 100%;
+  }
+
+  .MediaTextImage {
+    order: -1;
+    max-width: 100%;
+    height: 300px;
+  }
 }

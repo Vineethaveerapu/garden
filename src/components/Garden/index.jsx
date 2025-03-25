@@ -7,7 +7,7 @@ const Garden = () => {
   return (
     <>
       <div className={styles.gardenContainer}>
-        <h2>Create your dream Garden at Home</h2>
+        <h1>Create your dream Garden at Home</h1>
       </div>
       <div className={styles.gardenContent}>
         <h3>From the ground up</h3>

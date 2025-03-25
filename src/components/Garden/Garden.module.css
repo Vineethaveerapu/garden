@@ -1,6 +1,5 @@
 .gardenContainer {
   font-size: 2rem;
-
   text-align: center;
   margin-top: 3rem;
   background-image: url("../../assets/garden-img1.jpg");
@@ -11,10 +10,26 @@
   width: 100vw;
   margin-left: calc(var(--page-padding) * -1);
   margin-right: calc(var(--page-padding) * -1);
+
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
 }
 
 .gardenContent {
   font-size: 1.5rem;
-
   text-align: center;
+}
+
+@media (max-width: 760px) {
+  .gardenContainer {
+    min-height: 50vh;
+    margin-top: 0;
+
+    h1 {
+      font-size: 2rem;
+      transform: translateY(12vh);
+    }
+  }
 }
