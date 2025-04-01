@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 import Garden from "./components/Garden";
 import Services from "./components/Services";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         {currentPage === "home" && <MainHome />}
         {currentPage === "garden" && <Garden />}
         {currentPage === "services" && <Services />}
+        {currentPage === "contact" && <Contact />}
       </main>
       <Footer />
     </>
