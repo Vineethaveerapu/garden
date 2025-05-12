@@ -7,9 +7,10 @@
   background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 80vh;
-  width: 100vw;
+
+  width: calc(100% + var(--page-padding) * 2);
   margin-left: calc(var(--page-padding) * -1);
-  margin-right: calc(var(--page-padding) * -1);
+  overflow: hidden;
 
   h1 {
     margin: 0;
